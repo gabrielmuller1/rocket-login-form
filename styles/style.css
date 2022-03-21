@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+/*
+Estrutura do Site
+*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #afb6c2;
+    margin: 0px;
+    background: #191816;
+    display: grid;
+    grid-template-areas: 
+    "logo section"
+    "main section "
+    ;
+
+}
+
+header{
+    grid-area: logo;
+    background: url(../images/logo.svg) no-repeat border-box 40px 50px;
+}
+
+
+main{
+    grid-area: main;
+    width: 960px;
+}
+
+
+
+
+section{
+    grid-area: section;
+    margin: 0;
+    width: 50%;
+
+}
+
+/*
+Imagens Site
+*/
+
+main img{
+    width: 116px;
+    height: 26px;
+    margin: 40px 0 120px 40px ;
+}
+
+.img-login {
+    background: url(../images/log-in.svg) no-repeat;
+    background-position: left;
+    display: block;
+    padding-left: 30px;
+    color: #d4ccb6;
+    font-weight: 600;
+    font-size: 22px;
+    
+}
+
+section img{
+    width: 960px;
+    height: 930px;
+    
+}
+
+/*
+Formularios
+*/
+form{
+    margin: 0px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    width: 572px;
+    height: 512px;
+    background-color: #24221f;
+    margin: 0 auto;
+}
+
+div.form{
+    margin-bottom: 20px;
+}
+
+label{
+    color: #afb6c2;
+    font-size: 13px;
+    font-weight: 900;
+    padding: 0px;
+}
+
+/*
+Inputs
+*/
+
+input{
+    border: 1px solid #afb6c2;
+    color: #afb6c2;
+}
+
+.text{
+    border-radius: 5px;
+    width: 270px;
+    height: 33px;
+}
+
+/*
+Icones Inputs
+*/
+.icon-email{
+    background: url(../images/mail.svg) no-repeat padding-box 5px;
+    padding-left: 30px;
+    display: block;
+}
+
+.icon-email:focus{
+    background: url(../images/mail-focus.svg) no-repeat padding-box 5px;
+    padding-left: 30px;
+    outline: 2px solid #ffc632;
+}
+
+.icon-pass{
+    background: url(../images/lock.svg) no-repeat padding-box 5px;
+    padding-left: 30px;
+    
+}
+
+.icon-pass:focus{
+    background: url(../images/lock-focus.svg) no-repeat padding-box 5px;
+    outline: 2px solid #ffc632;
+}
+
+.container-icon{
+    width: 30px;
+    height: 25px;
+}
+
+.icon-eye{
+    display: inline-block;
+    position: relative;
+    right: 45px;
+    top: 10px;
+    background: #24221f url(../images/eye.svg) no-repeat padding-box 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  
+    
+}
+
+/*
+Checkbox inputs
+*/
+.chk{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    
+}
+
+.container-chk{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+   
+}
+
+.chk input {
+    display: none;
+    position: relative;
+    opacity: 0;
+}
+
+.checkmark {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: #24221f;
+    border: 1px solid #afb6c2;
+    border-radius: 3px;
+}
+
+.chk input:checked + .checkmark {
+    background: #ffc632 url(../images/check.svg) no-repeat;
+}
+
+/*
+buttons inputs
+*/
+button{
+    width: 310px;
+    height: 50px;
+    background-color: #ffc632;
+    border-radius: 5px;
+    color: #24221f;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+
+button:hover{
+    background: #be9325;
+    cursor: pointer;
+}
+
+/*
+links
+*/
+a{
+    color: #ffc632;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+a:hover{
+    text-decoration: underline solid #ffc632;
+    
+}
+
+/*
+formatação de texts
+*/
+p{
+    color: #afb6c2;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 13px;
+}
